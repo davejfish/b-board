@@ -15,7 +15,7 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    background-color: #F9F9F9;
 }
 
 main {
@@ -30,5 +30,5 @@ footer {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--footer-background);
+    background-color: #F9F9F9;
 }
