@@ -11,6 +11,7 @@ export async function getPosts() {
             title, 
             description, 
             contact`
-        );
+        )
+        .order('created_at', { ascending: false });
     return response.data;
 }
