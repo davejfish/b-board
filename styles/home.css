@@ -2,7 +2,6 @@
 main {
     background-color: #FF6392;
     display: grid;
-    align-items: center;
     text-align: center;
 }
 
@@ -18,12 +17,13 @@ header {
 
 .title {
     text-align: center;
+    font-size: 3rem;;
 }
 
 .b-box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    height: 650px;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    height: 1000px;
     overflow: scroll;
     margin-left: 40px;
     margin-right: 40px;
@@ -36,11 +36,17 @@ header {
 
 .b-box h2 {
     border-bottom: solid 1px black;
+    width: 100%;
 }
 
 .b-box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-bottom: solid 1px black;
-    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: "-";
 }
 
 .b-box::-webkit-scrollbar {
@@ -50,7 +56,7 @@ header {
 .box {
     background-color: #FFE45E;
     border: solid 3px black;
-    height: 200px;
+    height: 300px;
     margin: 15px;
     display: grid;
     grid-template-rows: 20%, 60%, 20%;
