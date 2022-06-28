@@ -10,7 +10,8 @@ export async function getPosts() {
         .select(`
             title, 
             description, 
-            contact`
+            contact, 
+            created_at`
         )
         .order('created_at', { ascending: false });
     return response.data;

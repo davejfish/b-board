@@ -15,7 +15,12 @@ export default function createBuildPosts(root) {
             const span2 = document.createElement('span');
             span2.textContent = message.contact;
 
-            div.append(h2, span1, span2);
+            const span3 = document.createElement('span');
+            span3.classList.add('small-text');
+            const timeStamp = new Date(message.created_at);
+            span3.textContent = timeStamp;
+
+            div.append(h2, span1, span2, span3);
             root.append(div);
         }
     };

@@ -8,6 +8,7 @@ body {
     height: 100%;
     padding-bottom: 30px;
     font-family: 'Rubik', san-serif;
+    background-color: #FF6392;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
 
 main {
     height: 100%;
-    background-color: #FF6392;
 }
 
 footer {
