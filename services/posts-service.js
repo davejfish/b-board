@@ -38,7 +38,7 @@ export async function signUp(email, password) {
 }
 
 export async function getUser() {
-    return client.auth.session() && client.auth.session().user;
+    return await client.auth.session() && await client.auth.session().user;
 }
 
 export async function signOut() {

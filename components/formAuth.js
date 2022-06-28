@@ -1,5 +1,5 @@
 // get data from forms pass
-// pass in handleAuth function with email/password formdata
+// pass in handleAuth function with email/password formData
 // return nothing
 export default function createFormAuth(form, { handleAuth }) {
     
