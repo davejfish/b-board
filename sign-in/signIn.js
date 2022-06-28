@@ -26,7 +26,6 @@ function checkAuth(response) {
     // if error display error, otherwise redirect page to create post
     if (response.error) {
         state.errorMessage = response.error.message;
-        console.log(state.errorMessage);
         display();
     }
     else {

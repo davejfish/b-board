@@ -16,6 +16,17 @@ export async function getPosts() {
     return response.data;
 }
 
+export async function addPostItem(title, content, author) {
+    const response = await client
+        .from('posts')
+        .insert([{
+            title: title,
+            description: content,
+            contact: author,
+        }])
+        .single();
+    return response;
+}
 // sign-in, sign out, sign up, get user
 
 export async function signIn(email, password) {
@@ -24,4 +35,12 @@ export async function signIn(email, password) {
 
 export async function signUp(email, password) {
     return client.auth.signUp({ email, password });
+}
+
+export async function getUser() {
+    return client.auth.session() && client.auth.session().user;
+}
+
+export async function signOut() {
+    await client.auth.signOut();
 }

@@ -1,0 +1,37 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.create-post {
+    display: grid;
+    grid-template-rows: 50px, 300px, 50px, 50px;
+    border: solid 3px black;
+    border-radius: 8px;
+    height: fit-content;
+    width: 300px;
+    background-color: #7FC8F8;
+    grid-gap: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    display: contents;
+}
+
+.error-message {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
