@@ -12,36 +12,53 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/sign-in.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <title>Web MVC UI</title>
 </head>
 
 <body>
     <header>
-        <div class="flex-row">
-            <img src="/assets/html_css_js.png">
-            <h1>Web MVC UI</h1> 
-        </div>
-        
-        <div>
-            <a href="./sign-in">
-                <button>login</button>
+            <a class="flex-row" href="../">
+                <img src="/assets/html_css_js.png">              
             </a>
-            <a href="./sign-in">
-                <button>create</button>
-            </a>
-        </div>
     </header>
 
     <main>
-        <h2 class="title">bulletin board</h2>
-        <section class="b-box"></section>
+        <form class="sign-in">
+            <h2>sign-in</h2>
+            <label>
+                email:
+                <input name="email">
+            </label>
+
+            <label>
+                password:
+                <input name="password">
+            </label>
+
+            <button name="submit">submit</button>
+        </form>
+
+        <form class="sign-up">
+            <h2>sign-up</h2>
+            <label>
+                email:
+                <input name="email">
+            </label>
+        
+            <label>
+                password:
+                <input name="password">
+            </label>
+        
+            <button name="submit">submit</button>
+        </form>
     </main>
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="signIn.js"></script>
 </body>
 
 </html>

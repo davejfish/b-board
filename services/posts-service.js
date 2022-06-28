@@ -15,3 +15,5 @@ export async function getPosts() {
         .order('created_at', { ascending: false });
     return response.data;
 }
+
+// sign-in, sign out, sign up, get user
