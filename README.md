@@ -6,7 +6,7 @@
 
 ## add start and finish with count to the db query to limit items shown
 
-## add query params to homepage to see if user clicked create a post, send to post instead of back home
+## create filter component, run in display see if it handles the parameters
 
 ## create post stretch goal same as above goal???
 

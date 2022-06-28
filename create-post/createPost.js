@@ -22,7 +22,7 @@ async function handleAddPost(title, content, author) {
         state.errorMessage = response.error.message;
     }
     else {
-        location.replace('../');
+        location.replace('../' + window.location.search);
     }
 }
 

@@ -12,14 +12,16 @@ import state from './state.js';
 // - pass in the root element via querySelector
 // - pass any needed handler functions as properties of an actions object 
 
-function handleFilter({ data }) {
-    const params = new URLSearchParams(window.location.search);
-    params.set('create', data.create);
-}
-
 async function handlePageLoad() {
     state.messages = await getPosts();
     display();
+}
+
+function handleFilter({ data }) {
+    const params = new URLSearchParams(window.location.search);
+    params.set('create', data.create);
+
+    window.location.search = params.toString();
 }
 
 async function handleSignOut() {
@@ -34,8 +36,8 @@ const BuildMessage = createBuildMessage(document.querySelector('.create-post'), 
 function display() {
     // Call each component passing in props that are the pieces of state this component needs
     BuildPosts({ messages: state.messages });
-    BuildMessage();
     SignOut();
+    BuildMessage();
 }
 
 // Call display on page load

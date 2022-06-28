@@ -23,13 +23,17 @@ async function handleSignUp(email, password) {
 }
 
 function checkAuth(response) {
+    const params = new URLSearchParams(window.location.search);
     // if error display error, otherwise redirect page to create post
     if (response.error) {
         state.errorMessage = response.error.message;
         display();
     }
+    else if (params.get('create')) {
+        location.assign('../create-post/');
+    }
     else {
-        location.replace('../');
+        location.replace('../' + window.location.search);
     }
 }
 

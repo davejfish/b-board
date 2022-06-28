@@ -1,11 +1,11 @@
 export default function createBuildMessage(root, { handleFilter }) {
     root.addEventListener('click', () => {
         const data = {
-            'create': true,
+            create: true,
         };
 
         handleFilter({ data });
-        window.location.assign('./create-post/');
+        window.location.assign('./create-post/' + '?create=true');
     });
 
     return () => {
