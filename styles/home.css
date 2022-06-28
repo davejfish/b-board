@@ -1,1 +1,69 @@
 /* CSS for home page (index.html) */
+main {
+    background-color: #FF6392;
+    display: grid;
+    text-align: center;
+    height: 1000px;
+    margin-bottom: 100px;;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;;
+}
+
+.b-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    height: 800px;
+    overflow: scroll;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+    grid-gap: 15px;
+    border: solid 3px black;
+    border-radius: 8px;
+    background-color: #7FC8F8;
+}
+
+.b-box h2 {
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+
+.b-box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px black;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: "-";
+}
+
+.b-box::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    background-color: #FFE45E;
+    border: solid 3px black;
+    height: 300px;
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 15%, 60%, 15% 10%;
+}
+
+.small-text {
+    font-size: .5rem;
+}

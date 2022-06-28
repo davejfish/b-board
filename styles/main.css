@@ -8,6 +8,7 @@ body {
     height: 100%;
     padding-bottom: 30px;
     font-family: 'Rubik', san-serif;
+    background-color: #FF6392;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    background-color: #F9F9F9;
 }
 
 main {
@@ -30,5 +31,5 @@ footer {
     padding: 10px;
     display: flex;
     justify-content: flex-end;
-    background-color: var(--footer-background);
+    background-color: #F9F9F9;
 }

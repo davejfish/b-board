@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sign-in {
+    display: grid;
+    grid-template-rows: 50px, 50px, 50px, 50px;
+    border: solid 3px black;
+    border-radius: 8px;;
+    height: fit-content;
+    width: 300px;
+    background-color: #7FC8F8;
+    grid-gap: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.sign-up {
+    display: grid;
+    grid-template-rows: 50px, 50px, 50px, 50px;
+    border: solid 3px black;
+    border-radius: 8px;
+    ;
+    height: fit-content;
+    width: 300px;
+    background-color: #7FC8F8;
+    grid-gap: 10px;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+label {
+    display: contents;
+}
+
+.error-message {
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
+}
