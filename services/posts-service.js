@@ -17,3 +17,11 @@ export async function getPosts() {
 }
 
 // sign-in, sign out, sign up, get user
+
+export async function signIn(email, password) {
+    return client.auth.signIn({ email, password });
+}
+
+export async function signUp(email, password) {
+    return client.auth.signUp({ email, password });
+}

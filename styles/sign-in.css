@@ -1,5 +1,10 @@
 main {
     display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -36,4 +41,10 @@ h2 {
 
 label {
     display: contents;
+}
+
+.error-message {
+    color: white;
+    font-size: 2rem;
+    margin-top: 50px;
 }
